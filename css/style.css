@@ -9,10 +9,21 @@
 body {
     font-family: 'Roboto', sans-serif;
     color: var(--title-text-color); }
+   
+    
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 15px;
+    width: 1200px;
+     
+}
 
 .logo { 
 font-family: 'Raleway', sans-serif;
 color:var(--accent-color);
+
 font-size: 26px;
 font-weight: 700;
 line-height: 1.19;
@@ -29,17 +40,52 @@ letter-spacing: 0.03em;
 
 ul {
     list-style-type: none;
+padding: 0;
+margin: 0;
 }
+.button-portfolio-nav {
+    margin-bottom: 50px;
+}
+
 .our-team { 
     background: var(--background-color-2);
+    padding-bottom: 94px;
 }
  
+.our-team-title {
+    margin-top: 0;
+    margin-bottom: 50px;
+    padding-top: 94px;
+    padding-left:  668px;
+    padding-right: 668px;
+}
+.link {
+    display: flex;
+    margin-left: 93px;
+}
+ 
+.link .item {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    
+    
+    color:var(--primary-text-color);
+    font-style: normal;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em
 
+}
+ 
+.link .item:not(:last-child) {
+    margin-right: 50px; ;
+ }
 
 .links .links-current {
     color: var(--title-text-color);
-    
-     }
+    }
 
 .links:hover ,
 .links:focus ,
@@ -47,13 +93,28 @@ ul {
     color:var(--accent-color); }
 
 .nav {
+display: block;
+
+ 
     color:var(--primary-text-color);
     font-style: normal;
     font-size: 14px;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
+ }
+
+ .link-adress .item + .item {
+    margin-left: 50px
 }
+
+ .link-adress {
+     display: flex;
+     align-items: center;
+     padding-left: auto;
+     background-color: tomato;
+ }
+ 
 
 .nav:hover ,
 .nav:focus {
@@ -62,17 +123,12 @@ ul {
 .nav:active {
 color: tomato;}
 
-.portfolio-nav {
-    color: var(--title-text-color);
-    background: var(--background-color-2);
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.63;
-    letter-spacing: 0.03em;
-    text-align: center;
-    border: 1px solid #EEEEEE;
-        }
+ .main-nav {
+display: flex;
+align-items: center;
+
+
+}
 
 .portfolio-nav:hover ,
 .portfolio-nav:focus {
@@ -81,10 +137,16 @@ color: tomato;}
 
 .hero {
     background: var(--background-color);
+    text-align: center;
+    margin-bottom: 94px;
  }
 
 .hero-title {
     color: var(--accent-color-2);
+    margin-top: 0;
+    margin-bottom: 40px;
+    
+   
     font-size: 44px;
     font-weight: 900;
     line-height: 1.36;
@@ -96,14 +158,32 @@ button {
         font-family: inherit;
         background: var(--accent-color);
         color: var(--accent-color-2);
-        font-size: 16px;
-        text-align: center;
+       padding: 10px 32px;
+       border-radius: 4px;  
+       display: inline-block;
+       min-width: 200px;  
+       font-size: 16px;
+       text-align: center;
        font-weight: 700;
        line-height: 1.86;
        letter-spacing: 0.06em;
-        border-radius: 4px;       
+       border: 1px solid transparent;
     }
-
+    .portfolio-nav {
+        color: var(--title-text-color);
+        background: var(--background-color-2);
+        font-family: inherit;
+        padding: 6px 22px;
+        border-radius: 4px;  
+        min-width: 73px;  
+        display: inline-block;    
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 1.63;
+        letter-spacing: 0.03em;
+        text-align: center;
+        
+            }
  a {     
     text-decoration: none;
     color: inherit; 
@@ -124,14 +204,23 @@ h2 {
     
 .specifity {
     color: var(--title-text-color);
+    margin-left: 0;
+    margin-right: 0;
     font-size: 14px;  
     line-height: 1.14;
     font-weight: 700;
     letter-spacing: 0.03em;
     text-transform: uppercase;
 }
+
+.section{
+    padding-bottom: 94px;
+        }
+
 p.specifity-firm {
 color:var(--primary-text-color);
+margin-top: 0;
+margin-bottom: 0;
 font-size: 14px;
 font-weight: 400;
 line-height: 1.7;
@@ -139,8 +228,17 @@ letter-spacing: 0.03em;
 text-align: left;
 }
 
-   .team  {
-       color:var(--title-text-color);     
+.work {
+    margin-top: 0;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+       
+  .team  {
+       color:var(--title-text-color);  
+       margin-top: 0;
+       margin-bottom: 0;
        font-size: 16px;
        font-weight: 500;
        line-height: 1.19;
@@ -150,13 +248,29 @@ text-align: left;
 
      .position {
         color:var(--primary-text-color);
+        margin-top: 0;
+        margin-bottom: 0;
         font-size: 16px;
         font-weight: 400;
         line-height: 1.19;
         letter-spacing: 0.03em;
         text-align: center;
      }
-   
+
+     .img-work {
+        margin-top: 0;
+        margin-bottom: 94px;
+     }
+
+     .team-img {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0;
+        margin-bottom: 0;
+       
+        padding: 0 15px;
+        width: 1200px; }
+
 ul > .product-name {
     font-size: 18px;
     font-weight: 700;
@@ -164,6 +278,9 @@ ul > .product-name {
     letter-spacing: 0.06em;
     text-align: left;
     }
+
+
+
 
 .product {
 color:var(--primary-text-color);
@@ -176,9 +293,13 @@ text-align: left;
 
 footer {
    background:var(--background-color);
- }
+    }
+ 
+
+
  .logo-footer {
     color: var(--accent-color-2);
+    display: inline;
     font-family: 'Raleway', sans-serif;
     font-size: 26px; 
     font-weight: 700; 
