@@ -219,10 +219,15 @@ h2 {
     text-transform: uppercase;
 }
 
-.section{
+.section {
     padding-top: 94px;
     padding-bottom: 94px;
         }
+
+.section-work {
+    padding-top: 0px;
+    padding-bottom: 94px;
+}
 
 p.specifity-firm {
 color:var(--primary-text-color);
@@ -378,13 +383,10 @@ padding: 20px 24px;
 }
 footer {
    background:var(--background-color);
+   padding-top: 60px;
+   padding-bottom: 60px;
     }
  
-footer div.container {
-    padding-top: 60px;
-    padding-bottom: 60px;
-}
-
  .logo-footer {
     color: var(--accent-color-2);
     display: inline;
